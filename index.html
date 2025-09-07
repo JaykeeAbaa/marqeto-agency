@@ -1,0 +1,703 @@
+<html lang="en" class="h-full scroll-smooth"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marqeto — Freelance Growth Partners</title>
+    <meta name="description" content="Find elite freelancers in paid media, SEO, design, and development. Guaranteed quality, measurable growth.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root { color-scheme: light dark; }
+      html, body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', sans-serif; }
+    
+    /* Smooth scrolling and visual enhancements */
+    html { scroll-behavior: smooth; }
+    
+    /* Smooth fade-in animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes fadeInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+    @keyframes fadeInRight {
+      from {
+        opacity: 0;
+        transform: translateX(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+    .animate-fade-in-up {
+      animation: fadeInUp 0.6s ease-out forwards;
+    }
+    
+    .animate-fade-in-left {
+      animation: fadeInLeft 0.6s ease-out forwards;
+    }
+    
+    .animate-fade-in-right {
+      animation: fadeInRight 0.6s ease-out forwards;
+    }
+    
+    /* Staggered animations */
+    .animate-delay-100 { animation-delay: 0.1s; }
+    .animate-delay-200 { animation-delay: 0.2s; }
+    .animate-delay-300 { animation-delay: 0.3s; }
+    .animate-delay-400 { animation-delay: 0.4s; }
+    
+    /* Hover effects */
+    .hover-lift {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .hover-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+    
+    /* Gradient text */
+    .gradient-text {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    /* Section transitions */
+    .section-transition {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    
+    .section-transition.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    /* Prevent animation glitches on refresh */
+    .animate-fade-in-up,
+    .animate-fade-in-left,
+    .animate-fade-in-right {
+      opacity: 0;
+    }
+    
+    /* Ensure smooth animation start */
+    @media (prefers-reduced-motion: no-preference) {
+      .animate-fade-in-up,
+      .animate-fade-in-left,
+      .animate-fade-in-right {
+        animation-fill-mode: both;
+      }
+    }
+    </style>
+  </head>
+  <body class="min-h-full bg-gradient-to-b from-slate-50 via-white to-slate-50 text-slate-900 antialiased">
+    <!-- Top Announcement -->
+    <div class="relative isolate">
+      <div class="pointer-events-none absolute inset-0 -z-10 opacity-60">
+        <div class="absolute -top-32 -left-32 h-96 w-96 rounded-full bg-indigo-200 blur-3xl"></div>
+        <div class="absolute -bottom-32 -right-32 h-96 w-96 rounded-full bg-sky-200 blur-3xl"></div>
+      </div>
+
+      <!-- Navbar -->
+      <header class="mx-auto max-w-7xl px-6 py-5">
+        <nav class="flex items-center justify-between">
+          <a href="#" class="flex items-center gap-2">
+            <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-slate-900 text-white shadow-sm ring-1 ring-slate-900/10">
+              <i data-lucide="sparkles" class="h-5 w-5"></i>
+            </span>
+            <span class="text-lg font-semibold tracking-tight">Marqeto</span>
+          </a>
+          <div class="hidden items-center gap-8 md:flex">
+            <a href="#services" class="text-sm font-medium text-slate-600 hover:text-slate-900">Services</a>
+            <a href="#categories" class="text-sm font-medium text-slate-600 hover:text-slate-900">Categories</a>
+            <a href="#pricing" class="text-sm font-medium text-slate-600 hover:text-slate-900">Pricing</a>
+            <a href="#process" class="text-sm font-medium text-slate-600 hover:text-slate-900">Process</a>
+            <a href="#contact" class="text-sm font-medium text-slate-600 hover:text-slate-900">Contact</a>
+          </div>
+          <div class="flex items-center gap-3">
+            <a href="#" class="hidden rounded-lg px-4 py-2 text-sm font-medium text-slate-700 hover:text-slate-900 md:inline">Sign in</a>
+            <a href="#" class="inline-flex items-center gap-2 rounded-lg bg-slate-900 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-slate-800">
+              <i data-lucide="user-plus" class="h-4 w-4"></i>
+              Hire Talent
+            </a>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Hero -->
+      <section class="mx-auto max-w-7xl px-6 pb-16 pt-6 md:pt-10">
+        <div class="grid items-center gap-10 md:grid-cols-2">
+        <div class="animate-fade-in-left">
+          <div class="mb-4 inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-600 shadow-sm animate-fade-in-up animate-delay-100">
+              <i data-lucide="shield-check" class="h-4 w-4 text-emerald-600"></i>
+              Satisfaction Guarantee
+            </div>
+          <h1 class="text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl animate-fade-in-up animate-delay-200">
+            The best talent in <span class="gradient-text">Paid Media &amp; SEO</span>. 
+            <span class="block text-indigo-600">Guaranteed.</span>
+            </h1>
+          <p class="mt-4 max-w-xl text-base leading-relaxed text-slate-600 animate-fade-in-up animate-delay-300">
+              Partner with pre-vetted specialists who launch faster, optimize smarter, and deliver measurable growth. Flat engagement fees. Clear outcomes.
+            </p>
+          <div class="mt-6 flex flex-wrap gap-3 animate-fade-in-up animate-delay-400">
+            <a href="#contact" class="inline-flex items-center gap-2 rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium text-white shadow-sm hover:bg-indigo-500 transition-all duration-300 hover:shadow-lg">
+                <i data-lucide="rocket" class="h-4 w-4"></i>
+                Start a project
+              </a>
+            <a href="#categories" class="inline-flex items-center gap-2 rounded-lg bg-white px-5 py-3 text-sm font-medium text-slate-900 ring-1 ring-slate-200 hover:bg-slate-50 transition-all duration-300 hover:shadow-md">
+                <i data-lucide="search" class="h-4 w-4"></i>
+                Find freelancers
+              </a>
+            </div>
+
+            <!-- Logos -->
+          <div class="mt-10 animate-fade-in-up animate-delay-500">
+              <p class="text-xs font-medium uppercase tracking-wider text-slate-500">Trusted by teams at</p>
+              <div class="mt-4 grid grid-cols-3 items-center gap-6 sm:grid-cols-6">
+              <img class="h-6 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-300" src="ibm-logo.png" alt="IBM">
+              <img class="h-6 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-300" src="google-logo.png" alt="Google">
+              <img class="h-6 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-300" src="shopify-logo.png" alt="Shopify">
+              <img class="h-6 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-300" src="airbnb-logo.png" alt="Airbnb">
+              <img class="h-6 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-300" src="meta-logo.png" alt="Meta">
+              <img class="h-6 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-300" src="tesla-logo.png" alt="Tesla">
+                </div>
+              </div>
+            </div>
+
+        <!-- Hero Image -->
+        <div class="flex justify-center animate-fade-in-right">
+          <img src="hero-image.png" alt="Digital marketing professional" class="h-auto max-w-full">
+              </div>
+
+        </div>
+      </section>
+    </div>
+
+    <!-- Categories -->
+  <section id="categories" class="mx-auto max-w-7xl px-6 py-16 section-transition">
+      <div class="mb-8 flex items-end justify-between">
+      <div class="animate-fade-in-up">
+          <h2 class="text-3xl font-semibold tracking-tight text-slate-900">Popular categories</h2>
+          <p class="mt-2 text-sm text-slate-600">Pre-vetted experts across growth-critical disciplines.</p>
+        </div>
+      <a href="#" class="hidden items-center gap-2 rounded-lg bg-white px-4 py-2 text-sm font-medium text-slate-900 ring-1 ring-slate-200 hover:bg-slate-50 md:inline-flex transition-all duration-300 hover:shadow-md animate-fade-in-up animate-delay-200">
+          <i data-lucide="list-checks" class="h-4 w-4"></i>
+          Browse all
+        </a>
+      </div>
+
+      <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+      <!-- SEO Card -->
+      <a href="#" class="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-5 shadow-sm hover-lift animate-fade-in-up animate-delay-100">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-3">
+            <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-indigo-600/10 text-indigo-600 group-hover:bg-indigo-600/20 transition-colors duration-300">
+                <i data-lucide="search" class="h-5 w-5"></i>
+              </span>
+              <div>
+              <p class="font-medium text-slate-900 group-hover:text-indigo-600 transition-colors duration-300">SEO</p>
+                <p class="text-xs text-slate-500">Audits, content, technical</p>
+            </div>
+          </div>
+          <i data-lucide="arrow-up-right" class="h-4 w-4 text-slate-400 group-hover:text-indigo-600 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300"></i>
+        </div>
+        <img src="seo-image.jpg" alt="SEO" class="mt-4 h-28 w-full rounded-lg object-cover group-hover:scale-105 transition-transform duration-300">
+        </a>
+
+      <!-- Paid Media Card -->
+      <a href="#" class="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-5 shadow-sm hover-lift animate-fade-in-up animate-delay-200">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-3">
+            <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-600/10 text-emerald-600 group-hover:bg-emerald-600/20 transition-colors duration-300">
+                <i data-lucide="badge-dollar-sign" class="h-5 w-5"></i>
+              </span>
+              <div>
+              <p class="font-medium text-slate-900 group-hover:text-emerald-600 transition-colors duration-300">Paid Media</p>
+                <p class="text-xs text-slate-500">Google, Meta, TikTok</p>
+            </div>
+          </div>
+          <i data-lucide="arrow-up-right" class="h-4 w-4 text-slate-400 group-hover:text-emerald-600 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300"></i>
+        </div>
+        <img src="paid-ads-image.jpg" alt="Paid Ads" class="mt-4 h-28 w-full rounded-lg object-cover group-hover:scale-105 transition-transform duration-300">
+        </a>
+
+      <!-- Development Card -->
+      <a href="#" class="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-5 shadow-sm hover-lift animate-fade-in-up animate-delay-300">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-3">
+            <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-sky-600/10 text-sky-600 group-hover:bg-sky-600/20 transition-colors duration-300">
+                <i data-lucide="code-2" class="h-5 w-5"></i>
+              </span>
+              <div>
+              <p class="font-medium text-slate-900 group-hover:text-sky-600 transition-colors duration-300">Development</p>
+                <p class="text-xs text-slate-500">Web apps &amp; automation</p>
+            </div>
+          </div>
+          <i data-lucide="arrow-up-right" class="h-4 w-4 text-slate-400 group-hover:text-sky-600 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300"></i>
+        </div>
+        <img src="development-image.jpg" alt="Development" class="mt-4 h-28 w-full rounded-lg object-cover group-hover:scale-105 transition-transform duration-300">
+        </a>
+
+      <!-- Design Card -->
+      <a href="#" class="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-5 shadow-sm hover-lift animate-fade-in-up animate-delay-400">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-3">
+            <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-rose-600/10 text-rose-600 group-hover:bg-rose-600/20 transition-colors duration-300">
+                <i data-lucide="palette" class="h-5 w-5"></i>
+              </span>
+              <div>
+              <p class="font-medium text-slate-900 group-hover:text-rose-600 transition-colors duration-300">Design</p>
+                <p class="text-xs text-slate-500">UI/UX &amp; branding</p>
+            </div>
+          </div>
+          <i data-lucide="arrow-up-right" class="h-4 w-4 text-slate-400 group-hover:text-rose-600 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300"></i>
+        </div>
+        <img src="design-image.jpg" alt="Design" class="mt-4 h-28 w-full rounded-lg object-cover group-hover:scale-105 transition-transform duration-300">
+        </a>
+      </div>
+    </section>
+
+    <!-- Difference -->
+  <section id="services" class="mx-auto max-w-7xl px-6 py-16 section-transition">
+      <div class="grid items-center gap-10 md:grid-cols-2">
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-indigo-600/10 text-indigo-600">
+              <i data-lucide="star" class="h-5 w-5"></i>
+            </span>
+            <h3 class="text-xl font-semibold tracking-tight">The Marqeto difference</h3>
+          </div>
+          <p class="mt-3 text-sm text-slate-600">We match you with proven operators and build a simple execution plan within 72 hours.</p>
+          <div class="mt-6 grid gap-4 sm:grid-cols-2">
+            <div class="rounded-xl border border-slate-200 p-4">
+              <div class="flex items-center gap-2">
+                <i data-lucide="thumbs-up" class="h-4 w-4 text-emerald-600"></i>
+                <p class="text-sm font-medium text-slate-900">Satisfaction Guarantee</p>
+              </div>
+              <p class="mt-1 text-xs text-slate-600">Pay only when you’re happy with deliverables.</p>
+            </div>
+            <div class="rounded-xl border border-slate-200 p-4">
+              <div class="flex items-center gap-2">
+                <i data-lucide="clock-5" class="h-4 w-4 text-indigo-600"></i>
+                <p class="text-sm font-medium text-slate-900">Fast onboarding</p>
+              </div>
+              <p class="mt-1 text-xs text-slate-600">Kickoff in as little as 3 days.</p>
+            </div>
+            <div class="rounded-xl border border-slate-200 p-4">
+              <div class="flex items-center gap-2">
+                <i data-lucide="line-chart" class="h-4 w-4 text-sky-600"></i>
+                <p class="text-sm font-medium text-slate-900">Measurable outcomes</p>
+              </div>
+              <p class="mt-1 text-xs text-slate-600">Clear KPIs and reporting built-in.</p>
+            </div>
+            <div class="rounded-xl border border-slate-200 p-4">
+              <div class="flex items-center gap-2">
+                <i data-lucide="user-cog" class="h-4 w-4 text-rose-600"></i>
+                <p class="text-sm font-medium text-slate-900">Vetted network</p>
+              </div>
+              <p class="mt-1 text-xs text-slate-600">Top 3% of applicants make the cut.</p>
+            </div>
+          </div>
+          <a href="#contact" class="mt-6 inline-flex items-center gap-2 rounded-lg bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-slate-800">
+            <i data-lucide="sparkle" class="h-4 w-4"></i>
+            Get matched
+          </a>
+        </div>
+        <div class="relative">
+        <img src="team-collaboration-image.jpg" class="h-80 w-full rounded-2xl object-cover md:h-[460px]" alt="Team collaboration">
+          <div class="absolute -bottom-6 -left-6 rounded-2xl border border-slate-200 bg-white/80 p-4 backdrop-blur shadow-xl">
+            <div class="flex items-center gap-3">
+              <img src="client-avatar.jpg" class="h-10 w-10 rounded-full object-cover" alt="Client">
+              <div>
+                <p class="text-sm font-medium text-slate-900">“We scaled to 5.2x ROAS in 60 days.”</p>
+                <p class="text-xs text-slate-500">VP Growth, DTC brand</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+  <section id="process" class="mx-auto max-w-7xl px-6 py-16 section-transition">
+      <div class="mx-auto max-w-2xl text-center">
+      <h2 class="text-3xl font-semibold tracking-tight text-slate-900 animate-fade-in-up">Get started in <span class="gradient-text">3 steps</span></h2>
+      <p class="mt-2 text-sm text-slate-600 animate-fade-in-up animate-delay-200">No endless calls. No guesswork. Just clear execution.</p>
+      </div>
+      <div class="mt-8 grid gap-5 sm:grid-cols-3">
+      <!-- Step 1 -->
+      <div class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover-lift animate-fade-in-up animate-delay-100">
+          <div class="flex items-center gap-3">
+          <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-indigo-600/10 text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300">
+              <i data-lucide="target" class="h-5 w-5"></i>
+            </span>
+          <p class="font-medium text-slate-900 group-hover:text-indigo-600 transition-colors duration-300">Scope</p>
+          </div>
+          <p class="mt-2 text-sm text-slate-600">Share your goals and constraints. We translate them into an actionable brief.</p>
+        <div class="mt-4 flex items-center text-xs text-indigo-600 font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <span>Step 1 of 3</span>
+          <i data-lucide="arrow-right" class="h-3 w-3 ml-1"></i>
+        </div>
+      </div>
+      
+      <!-- Step 2 -->
+      <div class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover-lift animate-fade-in-up animate-delay-200">
+          <div class="flex items-center gap-3">
+          <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-600/10 text-emerald-600 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300">
+              <i data-lucide="users" class="h-5 w-5"></i>
+            </span>
+          <p class="font-medium text-slate-900 group-hover:text-emerald-600 transition-colors duration-300">Match</p>
+          </div>
+          <p class="mt-2 text-sm text-slate-600">Meet 2–3 curated experts with relevant outcomes under their belt.</p>
+        <div class="mt-4 flex items-center text-xs text-emerald-600 font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <span>Step 2 of 3</span>
+          <i data-lucide="arrow-right" class="h-3 w-3 ml-1"></i>
+        </div>
+      </div>
+      
+      <!-- Step 3 -->
+      <div class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover-lift animate-fade-in-up animate-delay-300">
+          <div class="flex items-center gap-3">
+          <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-sky-600/10 text-sky-600 group-hover:bg-sky-600 group-hover:text-white transition-all duration-300">
+              <i data-lucide="zap" class="h-5 w-5"></i>
+            </span>
+          <p class="font-medium text-slate-900 group-hover:text-sky-600 transition-colors duration-300">Launch</p>
+          </div>
+          <p class="mt-2 text-sm text-slate-600">Kick off with a weekly cadence, transparent milestones, and shared dashboards.</p>
+        <div class="mt-4 flex items-center text-xs text-sky-600 font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <span>Step 3 of 3</span>
+          <i data-lucide="check" class="h-3 w-3 ml-1"></i>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+  <section id="pricing" class="mx-auto max-w-7xl px-6 py-16 section-transition">
+      <div class="mx-auto max-w-2xl text-center">
+        <h2 class="text-3xl font-semibold tracking-tight text-slate-900">Pricing plans</h2>
+        <p class="mt-2 text-sm text-slate-600">Simple engagements. Cancel anytime.</p>
+      </div>
+
+      <div class="mt-8 grid gap-6 lg:grid-cols-3">
+        <!-- Plan -->
+        <div class="flex flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <div class="flex items-center justify-between">
+            <p class="text-lg font-semibold tracking-tight">Starter</p>
+            <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700">Best for trials</span>
+          </div>
+          <p class="mt-2 text-3xl font-semibold tracking-tight">$1,900</p>
+          <p class="text-xs text-slate-500">per month</p>
+          <ul class="mt-5 space-y-3 text-sm">
+            <li class="flex items-start gap-2"><i data-lucide="check" class="mt-0.5 h-4 w-4 text-emerald-600"></i> 20 hours with a specialist</li>
+            <li class="flex items-start gap-2"><i data-lucide="check" class="mt-0.5 h-4 w-4 text-emerald-600"></i> Bi-weekly reporting</li>
+            <li class="flex items-start gap-2"><i data-lucide="check" class="mt-0.5 h-4 w-4 text-emerald-600"></i> Slack support</li>
+          </ul>
+          <a href="#contact" class="mt-6 inline-flex items-center justify-center gap-2 rounded-lg bg-white px-4 py-2 text-sm font-medium text-slate-900 ring-1 ring-slate-200 hover:bg-slate-50">
+            <i data-lucide="plus" class="h-4 w-4"></i>
+            Choose Starter
+          </a>
+        </div>
+
+        <div class="relative flex flex-col rounded-2xl border-2 border-indigo-600 bg-white p-6 shadow-sm">
+          <div class="absolute -top-3 right-4 rounded-full bg-indigo-600 px-3 py-1 text-xs font-medium text-white">Most popular</div>
+          <div class="flex items-center justify-between">
+            <p class="text font-semibold tracking-tight">Growth</p>
+            <span class="rounded-full bg-indigo-50 px-3 py-1 text-xs font-medium text-indigo-700">Scale up</span>
+          </div>
+          <p class="mt-2 text-3xl font-semibold tracking-tight">$4,200</p>
+          <p class="text-xs text-slate-500">per month</p>
+          <ul class="mt-5 space-y-3 text-sm">
+            <li class="flex items-start gap-2"><i data-lucide="check" class="mt-0.5 h-4 w-4 text-emerald-600"></i> 50 hours + strategist</li>
+            <li class="flex items-start gap-2"><i data-lucide="check" class="mt-0.5 h-4 w-4 text-emerald-600"></i> Weekly reporting &amp; dashboard</li>
+            <li class="flex items-start gap-2"><i data-lucide="check" class="mt-0.5 h-4 w-4 text-emerald-600"></i> Experiment roadmap</li>
+          </ul>
+          <a href="#contact" class="mt-6 inline-flex items-center justify-center gap-2 rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-500">
+            <i data-lucide="sparkles" class="h-4 w-4"></i>
+            Choose Growth
+          </a>
+        </div>
+
+        <div class="flex flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <div class="flex items-center justify-between">
+            <p class="text-lg font-semibold tracking-tight">Enterprise</p>
+            <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700">Custom</span>
+          </div>
+          <p class="mt-2 text-3xl font-semibold tracking-tight">Let’s talk</p>
+          <p class="text-xs text-slate-500">annual or project-based</p>
+          <ul class="mt-5 space-y-3 text-sm">
+            <li class="flex items-start gap-2"><i data-lucide="check" class="mt-0.5 h-4 w-4 text-emerald-600"></i> Multi-channel squads</li>
+            <li class="flex items-start gap-2"><i data-lucide="check" class="mt-0.5 h-4 w-4 text-emerald-600"></i> Advanced analytics</li>
+            <li class="flex items-start gap-2"><i data-lucide="check" class="mt-0.5 h-4 w-4 text-emerald-600"></i> Procurement-friendly</li>
+          </ul>
+          <a href="#contact" class="mt-6 inline-flex items-center justify-center gap-2 rounded-lg bg-white px-4 py-2 text-sm font-medium text-slate-900 ring-1 ring-slate-200 hover:bg-slate-50">
+            <i data-lucide="phone" class="h-4 w-4"></i>
+            Talk to sales
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial + CTA -->
+  <section class="mx-auto max-w-7xl px-6 py-16 section-transition">
+      <div class="grid items-center gap-8 md:grid-cols-3">
+        <div class="md:col-span-2 rounded-3xl bg-slate-900 p-8 text-white shadow-xl">
+          <div class="grid gap-6 md:grid-cols-2">
+            <div>
+              <h3 class="text-2xl font-semibold tracking-tight">Setting the bar for top digital talent</h3>
+              <p class="mt-2 text-sm text-slate-300">Dedicated to excellence with transparent results and clear ownership across every engagement.</p>
+              <div class="mt-6 grid grid-cols-3 gap-4">
+                <div>
+                  <p class="text-xl font-semibold tracking-tight">93%</p>
+                  <p class="text-xs text-slate-400">Placement rate</p>
+                </div>
+                <div>
+                  <p class="text-xl font-semibold tracking-tight">100%</p>
+                  <p class="text-xs text-slate-400">Satisfaction</p>
+                </div>
+                <div>
+                  <p class="text-xl font-semibold tracking-tight">3.6x</p>
+                  <p class="text-xs text-slate-400">Avg. ROAS</p>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-2xl bg-white/5 p-5">
+              <div class="flex items-center gap-3">
+                <img src="happy-client-avatar.jpg" class="h-12 w-12 rounded-full object-cover" alt="Happy client">
+                <div>
+                  <p class="text-sm font-medium">“They move like an in-house team.”</p>
+                  <p class="text-xs text-slate-300">Head of Growth, SaaS</p>
+                </div>
+              </div>
+              <p class="mt-3 text-sm text-slate-300">From audit to optimization, the collaboration was crisp and the outcomes were real.</p>
+            </div>
+          </div>
+          <a href="#contact" class="mt-6 inline-flex items-center gap-2 rounded-lg bg-white px-4 py-2 text-sm font-medium text-slate-900 hover:bg-slate-100">
+            <i data-lucide="send" class="h-4 w-4"></i>
+            Let’s get you matched
+          </a>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h4 class="text-lg font-semibold tracking-tight text-slate-900">Why teams choose us</h4>
+          <ul class="mt-4 space-y-3 text-sm">
+            <li class="flex items-start gap-2"><i data-lucide="sparkle" class="mt-0.5 h-4 w-4 text-indigo-600"></i> Specialists only—no generalists</li>
+            <li class="flex items-start gap-2"><i data-lucide="shield" class="mt-0.5 h-4 w-4 text-emerald-600"></i> Risk-free trial period</li>
+            <li class="flex items-start gap-2"><i data-lucide="layout-dashboard" class="mt-0.5 h-4 w-4 text-sky-600"></i> Clean reporting &amp; dashboards</li>
+            <li class="flex items-start gap-2"><i data-lucide="sparkles" class="mt-0.5 h-4 w-4 text-rose-600"></i> Outcomes over hours</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+  <section id="contact" class="mx-auto max-w-7xl px-6 py-16 section-transition">
+      <div class="grid items-start gap-10 md:grid-cols-2">
+        <div>
+          <h2 class="text-3xl font-semibold tracking-tight text-slate-900">Contact us today</h2>
+          <p class="mt-2 text-sm text-slate-600">Tell us about your goals and we’ll match you with the right experts.</p>
+          <div class="mt-6 flex items-center gap-4">
+            <a href="#" class="inline-flex items-center gap-2 rounded-lg bg-white px-4 py-2 text-sm font-medium text-slate-900 ring-1 ring-slate-200 hover:bg-slate-50">
+              <i data-lucide="message-square" class="h-4 w-4"></i>
+              Chat with us
+            </a>
+            <a href="mailto:hello@marqeto.agency" class="inline-flex items-center gap-2 text-sm font-medium text-slate-700 hover:text-slate-900">
+              <i data-lucide="mail" class="h-4 w-4"></i>
+              hello@marqeto.agency
+            </a>
+          </div>
+          <div class="mt-10 grid grid-cols-3 gap-4">
+            <div class="rounded-xl border border-slate-200 bg-white p-4 text-center shadow-sm">
+              <p class="text-xl font-semibold tracking-tight">1k+</p>
+              <p class="mt-1 text-xs text-slate-500">Active experts</p>
+            </div>
+            <div class="rounded-xl border border-slate-200 bg-white p-4 text-center shadow-sm">
+              <p class="text-xl font-semibold tracking-tight">42</p>
+              <p class="mt-1 text-xs text-slate-500">Industries</p>
+            </div>
+            <div class="rounded-xl border border-slate-200 bg-white p-4 text-center shadow-sm">
+              <p class="text-xl font-semibold tracking-tight">72h</p>
+              <p class="mt-1 text-xs text-slate-500">Average match</p>
+            </div>
+          </div>
+        </div>
+        <form class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div>
+              <label class="text-xs font-medium text-slate-700">First name</label>
+              <input type="text" placeholder="Alex" class="mt-1 w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 outline-none placeholder:text-slate-400 focus:ring-2 focus:ring-indigo-500">
+            </div>
+            <div>
+              <label class="text-xs font-medium text-slate-700">Last name</label>
+              <input type="text" placeholder="Morgan" class="mt-1 w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 outline-none placeholder:text-slate-400 focus:ring-2 focus:ring-indigo-500">
+            </div>
+            <div class="sm:col-span-2">
+              <label class="text-xs font-medium text-slate-700">Work email</label>
+              <input type="email" placeholder="alex@company.com" class="mt-1 w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 outline-none placeholder:text-slate-400 focus:ring-2 focus:ring-indigo-500">
+            </div>
+            <div class="sm:col-span-2">
+              <label class="text-xs font-medium text-slate-700">What do you need help with?</label>
+              <textarea rows="4" placeholder="Growth goals, timelines, budget..." class="mt-1 w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 outline-none placeholder:text-slate-400 focus:ring-2 focus:ring-indigo-500"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-500">
+            <i data-lucide="send" class="h-4 w-4"></i>
+            Request talent match
+          </button>
+          <p class="mt-3 text-center text-xs text-slate-500">By submitting, you agree to our Terms and Privacy Policy.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-10 border-t border-slate-200 bg-white">
+      <div class="mx-auto max-w-7xl px-6 py-12">
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div>
+            <a href="#" class="flex items-center gap-2">
+              <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-slate-900 text-white">
+                <i data-lucide="sparkles" class="h-5 w-5"></i>
+              </span>
+              <span class="text-base font-semibold tracking-tight">Marqeto</span>
+            </a>
+            <p class="mt-3 text-sm text-slate-600">Elite freelancers on demand for performance marketing and product growth.</p>
+            <div class="mt-4 flex items-center gap-3">
+              <a href="#" class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200"><i data-lucide="twitter" class="h-4 w-4"></i></a>
+              <a href="#" class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200"><i data-lucide="linkedin" class="h-4 w-4"></i></a>
+              <a href="#" class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200"><i data-lucide="github" class="h-4 w-4"></i></a>
+            </div>
+          </div>
+          <div>
+            <p class="text-sm font-semibold tracking-tight text-slate-900">Services</p>
+            <ul class="mt-3 space-y-2 text-sm text-slate-600">
+              <li><a class="hover:text-slate-900" href="#">SEO Sprints</a></li>
+              <li><a class="hover:text-slate-900" href="#">Paid Media Ops</a></li>
+              <li><a class="hover:text-slate-900" href="#">Conversion Design</a></li>
+              <li><a class="hover:text-slate-900" href="#">Analytics &amp; Attribution</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-sm font-semibold tracking-tight text-slate-900">Company</p>
+            <ul class="mt-3 space-y-2 text-sm text-slate-600">
+              <li><a class="hover:text-slate-900" href="#">About</a></li>
+              <li><a class="hover:text-slate-900" href="#">Case Studies</a></li>
+              <li><a class="hover:text-slate-900" href="#">Careers</a></li>
+              <li><a class="hover:text-slate-900" href="#">Press</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-sm font-semibold tracking-tight text-slate-900">Resources</p>
+            <ul class="mt-3 space-y-2 text-sm text-slate-600">
+              <li><a class="hover:text-slate-900" href="#">Blog</a></li>
+              <li><a class="hover:text-slate-900" href="#">Playbooks</a></li>
+              <li><a class="hover:text-slate-900" href="#">Templates</a></li>
+              <li><a class="hover:text-slate-900" href="#">Support</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-10 flex flex-col items-center justify-between gap-4 border-t border-slate-200 pt-6 text-xs text-slate-500 sm:flex-row">
+          <p>© <span id="year"></span> Marqeto Inc. All rights reserved.</p>
+          <div class="flex items-center gap-4">
+            <a href="#" class="hover:text-slate-700">Privacy</a>
+            <a href="#" class="hover:text-slate-700">Terms</a>
+            <a href="#" class="hover:text-slate-700">Security</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script>
+      // Icons
+      window.lucide && window.lucide.createIcons();
+
+      // Year
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Scroll animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    // Observe all sections with section-transition class
+    document.querySelectorAll('.section-transition').forEach(section => {
+      observer.observe(section);
+    });
+
+    // Smooth scroll for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Add active navigation state
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('nav a[href^="#"]');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (scrollY >= (sectionTop - 200)) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('text-indigo-600');
+        link.classList.add('text-slate-600');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.remove('text-slate-600');
+          link.classList.add('text-indigo-600');
+        }
+      });
+    });
+
+    // Add loading animation
+    window.addEventListener('load', () => {
+      document.body.classList.add('loaded');
+    });
+    </script>
+  
+</body></html>
